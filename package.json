@@ -1,0 +1,26 @@
+{
+  "name": "qa-automation-framework",
+  "version": "1.0.0",
+  "description": "Python-based UI and API test automation framework",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleksandr-Spivak/qa-automation-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Oleksandr-Spivak/qa-automation-framework/issues"
+  },
+  "homepage": "https://github.com/Oleksandr-Spivak/qa-automation-framework#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.9"
+  }
+}
