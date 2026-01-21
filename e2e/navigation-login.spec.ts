@@ -1,11 +1,11 @@
-import { test, expect } from "@playwright/test";
+import { test } from "@playwright/test";
+import { HomePage } from "./pages/HomePage";
 
 test("Navigation to A/B testing page works", async ({ page }) => {
-  await page.goto("https://the-internet.herokuapp.com/");
+  const home = new HomePage(page);
 
-  await page.getByRole("link", { name: "A/B Testing" }).click();
+  await home.goto();
+  await home.goToABTesting();
 
-  const transition = page.locator("#content");
-  await expect(transition).toBeVisible();
-  await expect(transition).toContainText(/A\/B Test/i);
+  await home.expectOnABTestingPage();
 });
