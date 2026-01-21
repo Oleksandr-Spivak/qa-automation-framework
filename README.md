@@ -16,6 +16,7 @@ Currently included:
 - UI smoke tests for core navigation and login flows
 - Positive and negative login scenarios
 - Assertions focused on user-visible behavior (URLs, elements, error messages)
+- Basic Page Object Model (POM) used to separate page interactions from test assertions.
 
 Out of scope (by design):
 - API testing
@@ -31,10 +32,12 @@ These areas can be added later, but are excluded to keep the project focused on 
 /e2e
   /pages
     HomePage.ts
-  homepage.spec.ts
+    LoginPage.ts
+  homepage.smoke.spec.ts
   navigation-ab-testing.spec.ts
-  interaction-incorrect-login.spec.ts
+  login.invalid-credentials.spec.ts
 playwright.config.ts
+
 
 
 
