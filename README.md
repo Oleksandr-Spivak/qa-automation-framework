@@ -32,10 +32,5 @@ These areas can be added later, but are excluded to keep the project focused on 
   homepage.spec.ts                    # Homepage smoke validation
   navigation-login.spec.ts            # Login navigation flow
   interaction-incorrect-login.spec.ts # Negative login scenario
-playwright.config.ts                  # Playwright configuration
+  playwright.config.ts                  # Playwright configuration
 
-
-### Structure Notes
-- Tests are grouped under a single e2e directory.
-- Each spec file focuses on a specific user flow or behavior.
-- Tests are independent and can be executed in any order.
