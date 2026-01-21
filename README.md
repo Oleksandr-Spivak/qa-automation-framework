@@ -32,5 +32,6 @@ These areas can be added later, but are excluded to keep the project focused on 
   homepage.spec.ts                    # Homepage smoke validation
   navigation-login.spec.ts            # Login navigation flow
   interaction-incorrect-login.spec.ts # Negative login scenario
-  playwright.config.ts                  # Playwright configuration
+playwright.config.ts                  # Playwright configuration
+
 
